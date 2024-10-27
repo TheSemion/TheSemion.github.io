@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TheWeather</title>
+</head>
+<body>
+    <header>
+        <div class="container" id="up">
+            <h1>TheWeather</h1>
+            <div class="container" id="searchCon">
+                <input type="text" id="searchInput" placeholder="Введіть назву міста">
+                <button onclick="getCityName()" id="searchBut">Пошук</button>
+            </div>
+        </div>
+        <div class="container">
+            <p id="cityname">Погода у Бориславі</p>
+        </div>
+        <div class="container" id="week">
+            <div class="container">
+                <button onclick="getWeather(0)" class="custom-button" id="firstBut">
+                    <p id="data">26</p>
+                    <div class="container" id="minMax">
+                        <span id="min" class="button-text">мін.</span>
+                        <span id="max" class="button-text">макс.</span>
+                    </div>
+                    <div class="container" id="minMaxDeg">
+                        <span id="minDeg" class="button-text">0</span>
+                        <span id="maxDeg" class="button-text">5</span>
+                    </div>
+                </button>
+            </div>
+    
+            <!--/////////////////////////////////////////////////////////////////-->
+    
+            <div class="container">
+                <button onclick="getWeather(1)" class="custom-button" id="secondBut">
+                    <p id="data2">27</p>
+                    <div class="container" id="minMax2">
+                        <span id="min2" class="button-text">мін.</span>
+                        <span id="max2" class="button-text">макс.</span>
+                    </div>
+                    <div class="container" id="minMaxDeg2">
+                        <span id="minDeg2" class="button-text">0</span>
+                        <span id="maxDeg2" class="button-text">5</span>
+                    </div>
+                </button>
+            </div>
+
+
+            <!--/////////////////////////////////////////////////////////////////-->
+    
+            <div class="container">
+                <button onclick="getWeather(2)" class="custom-button" id="thirdBut">
+                    <p id="data3">28</p>
+                    <div class="container" id="minMax3">
+                        <span id="min3" class="button-text">мін.</span>
+                        <span id="max3" class="button-text">макс.</span>
+                    </div>
+                    <div class="container" id="minMaxDeg3">
+                        <span id="minDeg3" class="button-text">0</span>
+                        <span id="maxDeg3" class="button-text">5</span>
+                    </div>
+                </button>
+            </div>
+
+
+
+            <!--/////////////////////////////////////////////////////////////////-->
+    
+            <div class="container">
+                <button onclick="getWeather(3)" class="custom-button" id="fourthBut">
+                    <p id="data4">29</p>
+                    <div class="container" id="minMax4">
+                        <span id="min4" class="button-text">мін.</span>
+                        <span id="max4" class="button-text">макс.</span>
+                    </div>
+                    <div class="container" id="minMaxDeg4">
+                        <span id="minDeg4" class="button-text">0</span>
+                        <span id="maxDeg4" class="button-text">5</span>
+                    </div>
+                </button>
+            </div>
+
+
+
+            <!--/////////////////////////////////////////////////////////////////-->
+    
+            <div class="container">
+                <button onclick="getWeather(4)" class="custom-button" id="fifthBut">
+                    <p id="data5">30</p>
+                    <div class="container" id="minMax5">
+                        <span id="min5" class="button-text">мін.</span>
+                        <span id="max5" class="button-text">макс.</span>
+                    </div>
+                    <div class="container" id="minMaxDeg5">
+                        <span id="minDeg5" class="button-text">0</span>
+                        <span id="maxDeg5" class="button-text">5</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="container" id="dayWeather">
+            <div id="hoursData" class="hours">
+                <div class="container" id="hour0cont">
+                    <p id="hour0">00:00</p>
+                    <p id="deg0">0°C</p>
+                    <p id="wind0">0</p>
+                    <p id="pressure0"></p>
+                    <p id="feelslike0">0°C</p>
+                    <p id="chanceRain0">0%</p>
+                </div>
+                <div class="container" id="hour3cont">
+                    <p id="hour3">03:00</p>
+                    <p id="deg3">0°C</p>
+                    <p id="wind3">0</p>
+                    <p id="pressure3"></p>
+                    <p id="feelslike3">0°C</p>
+                    <p id="chanceRain3">0%</p>
+                </div>
+                <div class="container" id="hour6cont">
+                    <p id="hour6">06:00</p>
+                    <p id="deg6">0°C</p>
+                    <p id="wind6">0</p>
+                    <p id="pressure6"></p>
+                    <p id="feelslike6">0°C</p>
+                    <p id="chanceRain6">0%</p>
+                </div>
+                <div class="container" id="hour9cont">
+                    <p id="hour9">09:00</p>
+                    <p id="deg9">0°C</p>
+                    <p id="wind9">0</p>
+                    <p id="pressure9"></p>
+                    <p id="feelslike9">0°C</p>
+                    <p id="chanceRain9">0%</p>
+                </div>
+                <div class="container" id="hour12cont">
+                    <p id="hour12">12:00</p>
+                    <p id="deg12">0°C</p>
+                    <p id="wind12">0</p>
+                    <p id="pressure12"></p>
+                    <p id="feelslike12">0°C</p>
+                    <p id="chanceRain12">0%</p>
+                </div>
+                <div class="container" id="hour15cont">
+                    <p id="hour15">15:00</p>
+                    <p id="deg15">0°C</p>
+                    <p id="wind15">0</p>
+                    <p id="pressure15"></p>
+                    <p id="feelslike15">0°C</p>
+                    <p id="chanceRain15">0%</p>
+                </div>
+                <div class="container" id="hour18cont">
+                    <p id="hour18">18:00</p>
+                    <p id="deg18">0°C</p>
+                    <p id="wind18">0</p>
+                    <p id="pressure18"></p>
+                    <p id="feelslike18">0°C</p>
+                    <p id="chanceRain18">0%</p>
+                </div>
+                <div class="container" id="hour21cont">
+                    <p id="hour21">21:00</p>
+                    <p id="deg21">0°C</p>
+                    <p id="wind21">0</p>
+                    <p id="pressure21"></p>
+                    <p id="feelslike21">0°C</p>
+                    <p id="chanceRain21">0%</p>
+                </div>
+            </div>
+        </div>            
+    </header>  
+    <script src="script.js"></script>
+</body>
+</html>

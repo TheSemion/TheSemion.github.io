@@ -1,0 +1,427 @@
+body {
+    height: 100vh;
+    background: linear-gradient(60deg,white, rgb(197, 193, 193));
+}
+
+#up {
+    display:flex;
+    align-items: center;
+}
+
+#hour0cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: black;
+    border: 10px;
+}
+
+#hour3cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: gray;
+}
+
+#hour6cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: gray;
+}
+
+#hour9cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: gray;
+}
+
+#hour12cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: gray;
+}
+
+#hour15cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: gray;
+}
+
+#hour18cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: gray;
+}
+
+#hour21cont {
+    text-align: center;
+    height: 500px;
+    width: 80px;
+    background-color: rgb(180, 179, 179);
+    border-color: gray;
+}
+
+#hour0 {
+    color: orangered;
+}
+
+#hour3 {
+    color: orangered;
+}
+
+#hour6 {
+    color: orangered;
+}
+
+#hour9 {
+    color: orangered;
+}
+
+#hour12 {
+    color: orangered;
+}
+
+#hour15 {
+    color: orangered;
+}
+
+#hour18 {
+    color: orangered;
+}
+
+#hour21 {
+    color: orangered;
+}
+
+#hoursData {
+    font-weight: bold;
+    margin-left: 25px;
+    max-width: 675px; 
+    display:flex;
+    justify-content: space-between;
+}
+
+#dayWeather {
+    border-radius: 15px;;
+    margin-bottom: 30px;
+    max-width: 735px;
+    max-height: 500px;
+    margin-left: 550px;
+    width: 735px;
+    height: 500px;
+    background-color: gray;
+}
+
+#searchCon {
+    display: flex;
+    margin-left: 200px;
+    background-color: white;
+    border-radius: 15px;
+    height: 35px;
+    width: 1050px;
+}
+
+#degreesData {
+    font-weight: bold;
+    margin-left: 25px;
+    max-width: 675px; 
+    display:flex;
+    
+}
+
+#degreesData p {
+    margin-right: 73px;
+}
+
+#searchBut {
+    margin-top: 1px;
+    margin-left: 2px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 66px;
+    height: 33px;
+    max-height: 33px;
+}
+
+#searchInput {
+    border: 0;
+    color: gray;
+    font-weight: bold;
+    font-size:large;
+    padding-left: 30px;
+    border-radius: 15px;
+    height: 30px;
+    width: 950px;
+    margin-left: 0px;
+}
+
+/*////////////////////////////////////////////////////////*/
+
+#week {
+    display:flex;
+    margin-left: 600px;
+}
+
+#monday {
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#data {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#min {
+    font-weight: bold;
+}
+
+#max {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#minMax {
+    margin-bottom: 5px;
+}
+
+#minMaxDeg {
+    margin-bottom: 10px;
+}
+
+#minDeg {
+    font-weight: bold;
+}
+
+#maxDeg {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#cityname {
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+#firstBut {
+    width: 125px;
+    border-radius: 15px;
+
+}
+
+/*////////////////////////////////////////////////////////*/
+
+
+#tuesday {
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#data2 {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#min2 {
+    font-weight: bold;
+}
+
+#max2 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#minMax2 {
+    margin-bottom: 5px;
+}
+
+#minMaxDeg2 {
+    margin-bottom: 10px;
+}
+
+#minDeg2 {
+    font-weight: bold;
+}
+
+#maxDeg2 {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#secondBut {
+    margin-left: 3px;
+    width: 125px;
+    border-radius: 15px;
+
+}
+
+/*////////////////////////////////////////////////////////*/
+
+
+#wednesday {
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#data3 {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#min3 {
+    font-weight: bold;
+}
+
+#max3 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#minMax3 {
+    margin-bottom: 5px;
+}
+
+#minMaxDeg3 {
+    margin-bottom: 10px;
+}
+
+#minDeg3 {
+    font-weight: bold;
+}
+
+#maxDeg3 {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#thirdBut {
+    margin-left: 3px;
+    width: 125px;
+    border-radius: 15px;
+
+}
+
+/*////////////////////////////////////////////////////////*/
+
+#thursday {
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#data4 {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#min4 {
+    font-weight: bold;
+}
+
+#max4 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#minMax4 {
+    margin-bottom: 5px;
+}
+
+#minMaxDeg4 {
+    margin-bottom: 10px;
+}
+
+#minDeg4 {
+    font-weight: bold;
+}
+
+#maxDeg4 {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#fourthBut {
+    margin-left: 3px;
+    width: 125px;
+    border-radius: 15px;
+
+}
+
+/*////////////////////////////////////////////////////////*/
+
+#friday {
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#data5 {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#min5 {
+    font-weight: bold;
+}
+
+#max5 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#minMax5 {
+    margin-bottom: 3px;
+}
+
+#minMaxDeg5 {
+    margin-bottom: 10px;
+}
+
+#minDeg5 {
+    font-weight: bold;
+}
+
+#maxDeg5 {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#fifthBut {
+    margin-left: 3px;
+    width: 125px;
+    border-radius: 15px;
+
+}
+
+/*////////////////////////////////////////////////////////*/
+
+h1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(64, 106, 245);
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 36px;
+}
+
